@@ -16,13 +16,65 @@
 
     
     <style type="text/css">
-      body
-      {
-        background-color:#ededed;
-        color:#959595;
-        font-size:12pt;
-        font-family:"Source Sans Pro", Arial;
-      }
+      html {
+    -webkit-font-smoothing: antialiased;}
+
+	
+body
+  {
+    -webkit-text-stroke: 0.2px;
+    background-attachment:fixed;
+    background-color:#ededed; /*ededed*/
+    background-image:url('');
+    background-position:top right;
+    background-repeat:no-repeat;
+    background-size:auto 100%;
+  }
+      
+::-moz-selection
+  {
+    background-color: #625be7;
+    color: #fff;
+  }
+
+::selection
+  {
+    background-color: #625be7;
+    color: #fff;
+  }
+      
+a
+  {
+    color:#ccc;
+    cursor:url('http://i.imgur.com/FOBJ5I5.png'), auto;
+    text-decoration:none;}
+    div#qTip {z-index:9999;
+    background-color:#fff;
+    border:1px solid #f5f5f5;
+    color:#ededed;
+    display:none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:8px;
+    padding-right:5px;
+    padding:2px;
+    position:absolute;
+    text-transform:uppercase;
+  }
+
+::-webkit-scrollbar-thumb:vertical
+  {
+    background: #ededed;
+  }
+      
+::-webkit-scrollbar
+  {
+    background:#f5f5f5;
+    height: 10px;
+    width: 5px;}
+    iframe#tumblr_controls {
+    position: fixed!important;
+    right: 3px!important;
+  }
     </style>
     
     <p>i h8 everything</p>
