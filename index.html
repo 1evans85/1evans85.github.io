@@ -11,6 +11,28 @@
 <script src="https://raw.githubusercontent.com/shucreative/ShuCREATIVE/master/jquery.min.js"></script>
 
 <script type="text/javascript" src="https://raw.githubusercontent.com/shucreative/ShuCREATIVE/master/qtip.js"></script>
+	  
+<script type="text/javascript">
+	fullpage.initialize('#fullpage', {
+	anchors: ['Welcome', 'Portfolio', 'Contact'],
+	menu: '#menu',
+	css3:true });
+</script>
+
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+
+<script type="text/javascript">
+	$(window).load(function() {
+	$('.grid').masonry({
+	itemSelector: '.grid-item',
+	isAnimated: true,
+	gutter: 10,
+	isFitWidth: true
+	});
+	});
+</script>
+
     
 <link rel="stylesheet" href="https://raw.githubusercontent.com/shucreative/ShuCREATIVE/master/font.css">
 
@@ -195,27 +217,25 @@ a
 	    }
 	    
 	    
-.grid
-{
-	margin-top:20px;
-	margin:0 auto;
-	padding:20px;
-	height:80%;
-	overflow-x:hidden;
-	overflow-y:scroll;
-}
-	.grid img
-	    {
-	    	width:250px;
-	    }
-	
-	    .grid-item
-	    {
-		    width: auto;
-		    margin-bottom:10px;
-		    background-color:#fff;
-		    padding:4px;
-	    } 
+		.grid {
+margin-top:20px!Important;
+margin:0 auto;
+padding:20px;
+height:80%!important;
+overflow-x:hidden;
+overflow-y:scroll;
+		}
+.grid img {height:250px;}
+.grid-item { width: auto; margin-bottom: 10px;background-color:#fff;padding:4px;} 
+
+	   	.portfolio{
+            /*top: 50%;
+			transform: translateY(-50%);*/
+	   	    background-color:#f5f5f5;
+	   	    height:100%;
+	   	    padding:20px;
+            position: relative;
+	   	}
 	    
 
 	    #footer
@@ -229,70 +249,37 @@ a
 	    
 
     </style>
-    
-	<div id="fullpage">
-		<div class="section"><div id="banner">
-			<center><img src="https://raw.githubusercontent.com/shucreative/ShuCREATIVE/master/Untitled-2.png" width="200px"></center>
-		</div></div>
-		
-		 <div class="section" style="background-color:#1f1f1f">
-			 <div id="content">
-			<div class="download">	
-					<p><button>Download for Windows(64bit)</button>
-					<br>
-						<small>By downloading, you agree to the <a href="/"><b>Terms and Conditions</b></a></small>.
-					</p>
-				</div></div>
-		
-		<div class="section" style="background-color:#f5f5f5f;">
-			<div class="grid">
-              
-              <div class="grid-item"><img src="https://github.com/shucreative/ShuCREATIVE/raw/master/sample.png"></div>
-	      <div class="grid-item"><img src="https://github.com/shucreative/ShuCREATIVE/raw/master/sampple4.png"></div>
-	      <div class="grid-item"><img src="https://github.com/shucreative/ShuCREATIVE/raw/master/sample2.png"></div>         
-      </div>
-			
-			 </div>
-			<div class="section" style="background-color:#1f1f1f"><h1>Trailer.</h1>
-			<p><img src="https://raw.githubusercontent.com/shucreative/ShuCREATIVE/master/videosample.png" alt="sample video"></p>
-							
-			 
-				<div id="footer">
-					© 2017 awildshu.me ALL RIGHTS RESERVED
-				</div>
-		</div></div>
-	  </div>
 	  
-	<script type="text/javascript">
-	fullpage.initialize('#fullpage', {
-		anchors: ['Welcome', 'Portfolio', 'Contact'],
-		menu: '#menu',
-		css3:true 
-	});
+	  
+ 
+<div id="fullpage">
+	<!-- Section 1 --------------------------------------------------->
+    <div class="section">
+	<center>
+		<img src="https://raw.githubusercontent.com/shucreative/ShuCREATIVE/master/Untitled-2.png" width="200px">
+	</center>
+	</div>
 
-</script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
-<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
-
-	<script type="text/javascript">
-     $(window).load(function() {
-
-$('.grid').masonry({
-
-itemSelector: '.grid-item',
-
-isAnimated: true,
-
-gutter: 10,
-
-isFitWidth: true
-
-});
-
-});
+ <!-- Section 2 --------------------------------------------------->
+    <div class="section" style="background-color:#1f1f1f">
+	<p><button>Download for Windows(64bit)</button>
+	<br>
+	<small>By downloading, you agree to the <a href="/"><b>Terms and Conditions</b></a></small>.
+	</p>
+    </div>
 
 
-		</script>
+ <!-- Section 3 --------------------------------------------------->
+    <div class="section" style="background-color:#f5f5f5f;">
+	     <div class="portfolio">	
+	<div class="grid_item"><img src="https://github.com/shucreative/ShuCREATIVE/raw/master/sample.png"></div>
+	<div class="grid_item"><img src="https://github.com/shucreative/ShuCREATIVE/raw/master/sampple4.png"></div>
+	<div class="grid_item"><img src="https://github.com/shucreative/ShuCREATIVE/raw/master/sample2.png"></div>
+<br>
+	© 2017 awildshu.me ALL RIGHTS RESERVED
+	    </div>
+	</div>
+</div>	  
+	 
   </body>
 </html>
