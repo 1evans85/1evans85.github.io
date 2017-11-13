@@ -103,9 +103,9 @@
         // Create some defaults, extending them with any options that were provided
         var defaults = {
             //navigation
-            menu: true,
+            menu: false,
             anchors:[],
-            navigation: true,
+            navigation: false,
             navigationPosition: 'right',
             navigationColor: '#000',
             navigationTooltips: [],
