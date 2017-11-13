@@ -105,7 +105,7 @@
             //navigation
             menu: false,
             anchors:[],
-            navigation: false,
+            navigation: true,
             navigationPosition: 'right',
             navigationColor: '#000',
             navigationTooltips: [],
