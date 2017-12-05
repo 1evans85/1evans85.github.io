@@ -1,1 +1,1 @@
-# awildshu@.me
+# awildshu.me
