@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shu Creative</title>
+</head>
+
+<body>
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900italic,900,700italic,700,600italic,400italic,600,300italic,300,200italic,200&subset=latin,vietnamese,latin-ext' rel='stylesheet' type='text/css'>
+
+    <script src="https://cdn.rawgit.com/shucreative/ShuCREATIVE/master/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/shucreative/ShuCREATIVE/master/qtip.js"></script>
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/shucreative/ShuCREATIVE/master/font.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/shucreative/ShuCREATIVE/master/javascript.fullpage.css">
+
+
+    <style type="text/css">
+        html {
+            -webkit-font-smoothing: antialiased;
+        }
+        body {
+            -webkit-text-stroke: 0.2px;
+            background-attachment: fixed;
+            background-color: #0c0c0c;
+        }
+        a {
+            color: #3e3d50;
+            cursor: url('http://i.imgur.com/FOBJ5I5.png'), auto;
+            text-decoration: none;
+        }
+        code {
+            background-color: #0c0c0c;
+            color: red;
+            font-family: Consolas;
+            font-size: 11pt;
+            padding: 10px;
+            text-align: center;
+            white-space: -moz-pre-wrap;
+            white-space: -o-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        button {
+            background-color: #3e3d50;
+            -webkit-border-radius: 4;
+            -moz-border-radius: 4;
+            border-radius: 4px;
+            color: #ffffff;
+            padding: 5% 5% 5% 5%;
+            margin-bottom: 4px;
+            text-decoration: none;
+            border: 0px solid transparent;
+        }
+        #content {
+            width: calc(75% - 60px);
+            padding: 20px;
+            float: right;
+        }
+        #content img {
+            padding: 10px;
+        }
+        #content p {
+            float:right;
+            padding-top:10px;
+            padding-bottom:40px;
+            padding-left:80px;
+            padding-right:80px;
+            font-size: 10pt;
+            font-family: source sans pro;
+            text-transform:uppercase;
+            color: #3c3b4e;
+            text-align: justify;
+            text-align-last: center;
+            white-space: -moz-pre-wrap;
+            white-space: -o-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .section
+        {
+            background-size: 75%;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+        #banner
+        {
+            width: calc(75% - 60px);
+            padding: 20px;
+            float: right;
+        }
+        #banner p
+        {
+            font-size: 12pt;
+            font-family: source sans pro;
+            color: #ccc;
+            text-align: justify;
+            text-align-last: center;
+            word-break: break-word;
+        }
+        #banner img
+        {
+            bottom: 0!important;
+        }
+        #banner h1
+        {
+            color: #f5f5f5;
+        }
+        
+        #concept_art
+        {
+            font-size: 12pt;
+            font-family: source sans pro;
+            color: #ccc;
+            width: calc(75% - 60px);
+            padding: 20px;
+            float: right;
+            -webkit-column-count: 3;
+            -webkit-column-gap: 0px;
+            -moz-column-count: 3;
+            -moz-column-gap: 0px;
+            column-count: 3;
+            column-gap: 0px;
+        }
+        
+        #concept_art img
+        {
+            border: 8px solid transparent;
+            margin-top: 4px;
+            width: 100% !important;
+            height: auto !important;
+        }
+        
+        h1 {
+            font-family: source sans pro;
+            color: #3e3d50;
+            text-align: justify;
+            text-align-last: center;
+        }
+        
+        b,
+        strong
+        {
+            color: #3e3d50;
+        }
+        
+        #footer
+        {
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            margin: 0 auto;
+            position: fixed;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 8pt;
+            font-family: source sans pro;
+            color: #212121;
+            padding: 2px;
+            z-index: 9;
+            background-color: #ededed;
+            opacity: 0.5;
+        }
+        
+        #fixed_content
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 25%;
+            background-color: #ededed;
+            padding: 10px;
+            z-index: 9;
+        }
+        
+        #fixed_content p
+        {
+            padding: 20px;
+            font-size: 10pt;
+            font-family: source sans pro;
+            color: #212121;
+            text-align: justify;
+            text-align-last:justify;
+            white-space: -moz-pre-wrap;
+            white-space: -o-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        #fixed_content img
+        {
+            max-width: 100%;
+        }
+        
+        .download
+        {
+            position: fixed;
+            top: 50%;
+            margin: 0 auto;
+            padding: 10px;
+            width: calc(25% - 40px);
+            text-transform: uppercase;
+        }
+        
+        section
+        {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #ddd;
+        }
+        
+        input
+        {
+            display: none;
+        }
+        
+        label
+        {
+            display: inline-block;
+            float: right;
+            margin-left: 8px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 8pt;
+            font-family: source sans pro;
+            padding: 4px;
+            color: #3e3d50;
+        }
+        
+        input:checked + label
+        {
+            background-color: #3e3d50;
+            color: #ededed;
+        }
+        
+        #tab1:checked ~ #Nav1,
+        #tab2:checked ~ #Nav2,
+        #tab3:checked ~ #Nav3,
+        #tab4:checked ~ #Nav4
+        {
+            display: block;
+        }
+        
+
+        
+        #Nav1 a
+        {
+            color:#fff;
+        }
+        
+        .Video
+        {
+           width: calc(75% - 60px);
+            padding: 20px;
+            float: right;
+            background-color:red;
+            
+        }
+    </style>
+
+    <div id="fixed_content">
+
+
+        <input id="tab1" type="radio" name="tabs" checked>
+        <label for="tab1">Download</label>
+        <input id="tab2" type="radio" name="tabs">
+        <label for="tab2">About</label>
+        <input id="tab3" type="radio" name="tabs">
+        <label for="tab3">Contact</label>
+
+
+        <img src="https://raw.githubusercontent.com/shucreative/Awildshu/master/u.png">
+
+
+
+
+
+
+        <section id="Nav1">
+<p><b>A Deity's Story</b> is available now!<br>
+By downloading you agree to only use for educational purposes. <b>You will not</b> redistrubute, modify or copy any of its contents. </p>
+    <center><button><a href="https://awildshu.itch.io/adeitysstory">Download forWindows</a></button></center>
+           
+
+
+        </section>
+
+        <section id="Nav2">
+            <h1>  ABOUT.</h1>
+
+            <p>
+               25. M. Aspiring Game Developer.
+            </p>
+        </section>
+
+        <section id="Nav3">
+            <h1>Contact</h1>
+            <p>escapingzero@gmail.com</p>
+
+        </section>
+
+
+    </div>
+    </div>
+
+    </div>
+
+    <div id="footer">
+        © 2017 awildshu.me ALL RIGHTS RESERVED</div>
+    <div id="fullpage">
+        <div class="section" style="background-color:#3e3d50;background-image:url('https://raw.githubusercontent.com/shucreative/ShuCREATIVE/master/banner.png');">
+           <div id="content">
+           
+                    </div>
+          
+        </div>
+
+        <!-- Section 2 --------------------------------------------------->
+        <div class="section" style="background-color:#f5f5f5;">
+            <div id="content">                               
+                <center><img src="https://raw.githubusercontent.com/shucreative/Awildshu/master/title.png" alt="A Deitys Story"><br><img src="https://raw.githubusercontent.com/shucreative/Awildshu/master/Fillertext.png" alt="You play as Yin, a young Deity in charge of managing the underworld. One day, you awake in a land unlike your own and stripped from your powers. You come to learn that Yang- your heavenbound twin has taken it upon themselves to free your souls;<br><i>You must now retrieve them to regain your power and take back your kingdom."></center>      
+            </div>
+        </div>
+
+
+        <!-- Section 3 --------------------------------------------------->
+        
+
+
+        <div class="section" style="background-color:#3c3b4e;">
+            <div id="content"> 
+                <center><img src="https://raw.githubusercontent.com/shucreative/Awildshu/master/title3.png" alt="Development"><br> 
+                    <p style="color:#ededed">A 3d Platformer with 2D characters. Developed by Alexander Evans (Shu Creative) for University as a Game Aspect showcasing a specific Art Style.</p><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QUO8In0jGZE?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+            </div>
+        </div>
+ 
+    </div> 
+
+    <script type="text/javascript" src="https://cdn.rawgit.com/shucreative/ShuCREATIVE/master/javascript.fullPage.js"></script>
+    <script type="text/javascript">
+        fullpage.initialize('#fullpage', {
+            anchors: ['Index', 'Info', 'Promo', 'Extra'],
+            menu: '#menu',
+            css3: true
+        });
+    </script>
+
+</body>
+
+</html>
