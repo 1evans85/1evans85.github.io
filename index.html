@@ -67,11 +67,15 @@
             padding: 10px;
         }
         #content p {
-            padding: 40px;
+            float:right;
+            padding-top:10px;
+            padding-bottom:40px;
+            padding-left:80px;
+            padding-right:80px;
             font-size: 10pt;
             font-family: source sans pro;
-            text-transform: uppercase;
-            color: #212121;
+            text-transform:uppercase;
+            color: #3c3b4e;
             text-align: justify;
             text-align-last: center;
             white-space: -moz-pre-wrap;
@@ -80,17 +84,20 @@
             white-space: pre-wrap;
             word-wrap: break-word;
         }
-        .section {
+        .section
+        {
             background-size: 75%;
             background-repeat: no-repeat;
             background-position: bottom right;
         }
-        #banner {
+        #banner
+        {
             width: calc(75% - 60px);
             padding: 20px;
             float: right;
         }
-        #banner p {
+        #banner p
+        {
             font-size: 12pt;
             font-family: source sans pro;
             color: #ccc;
@@ -98,13 +105,17 @@
             text-align-last: center;
             word-break: break-word;
         }
-        #banner img {
+        #banner img
+        {
             bottom: 0!important;
         }
-        #banner h1 {
+        #banner h1
+        {
             color: #f5f5f5;
         }
-        #concept_art {
+        
+        #concept_art
+        {
             font-size: 12pt;
             font-family: source sans pro;
             color: #ccc;
@@ -118,23 +129,30 @@
             column-count: 3;
             column-gap: 0px;
         }
-        #concept_art img {
+        
+        #concept_art img
+        {
             border: 8px solid transparent;
             margin-top: 4px;
             width: 100% !important;
             height: auto !important;
         }
+        
         h1 {
             font-family: source sans pro;
             color: #3e3d50;
             text-align: justify;
             text-align-last: center;
         }
+        
         b,
-        strong {
+        strong
+        {
             color: #3e3d50;
         }
-        #footer {
+        
+        #footer
+        {
             width: 100%;
             bottom: 0;
             left: 0;
@@ -150,7 +168,9 @@
             background-color: #ededed;
             opacity: 0.5;
         }
-        #fixed_content {
+        
+        #fixed_content
+        {
             position: fixed;
             top: 0;
             left: 0;
@@ -160,18 +180,29 @@
             padding: 10px;
             z-index: 9;
         }
-        #fixed_content p {
-            font-size: 12pt;
+        
+        #fixed_content p
+        {
+            padding: 20px;
+            font-size: 10pt;
             font-family: source sans pro;
             color: #212121;
             text-align: justify;
-            text-align-last: center;
-            word-break: break-word;
+            text-align-last:justify;
+            white-space: -moz-pre-wrap;
+            white-space: -o-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: pre-wrap;
+            word-wrap: break-word;
         }
-        #fixed_content img {
+        
+        #fixed_content img
+        {
             max-width: 100%;
         }
-        .download {
+        
+        .download
+        {
             position: fixed;
             top: 50%;
             margin: 0 auto;
@@ -179,15 +210,21 @@
             width: calc(25% - 40px);
             text-transform: uppercase;
         }
-        section {
+        
+        section
+        {
             display: none;
             padding: 20px 0 0;
             border-top: 1px solid #ddd;
         }
-        input {
+        
+        input
+        {
             display: none;
         }
-        label {
+        
+        label
+        {
             display: inline-block;
             float: right;
             margin-left: 8px;
@@ -198,22 +235,36 @@
             padding: 4px;
             color: #3e3d50;
         }
-        input:checked + label {
+        
+        input:checked + label
+        {
             background-color: #3e3d50;
             color: #ededed;
         }
+        
         #tab1:checked ~ #Nav1,
         #tab2:checked ~ #Nav2,
         #tab3:checked ~ #Nav3,
-        #tab4:checked ~ #Nav4 {
+        #tab4:checked ~ #Nav4
+        {
             display: block;
         }
+        
+
         
         #Nav1 a
         {
             color:#fff;
         }
         
+        .Video
+        {
+           width: calc(75% - 60px);
+            padding: 20px;
+            float: right;
+            background-color:red;
+            
+        }
     </style>
 
     <div id="fixed_content">
@@ -227,21 +278,18 @@
         <label for="tab3">Contact</label>
 
 
+        <img src="https://raw.githubusercontent.com/shucreative/Awildshu/master/u.png">
 
-        <p>
-            <img src="https://raw.githubusercontent.com/shucreative/ShuCREATIVE/master/u.png">
-        </p>
 
 
 
 
 
         <section id="Nav1">
-            <p>
-                <button><a href="https://awildshu.itch.io/adeitysstory">Download for Windows</a></button>
-                <br> By downloading you agree to only use for educational purposes<br>
-                You will not redistrubute, modify or copy any of its contents.
-            </p>
+<p><b>A Deity's Story</b> is available now!<br>
+By downloading you agree to only use for educational purposes. <b>You will not</b> redistrubute, modify or copy any of its contents. </p>
+    <center><button><a href="https://awildshu.itch.io/adeitysstory">Download forWindows</a></button></center>
+           
 
 
         </section>
@@ -270,17 +318,16 @@
         © 2017 awildshu.me ALL RIGHTS RESERVED</div>
     <div id="fullpage">
         <div class="section" style="background-color:#3e3d50;background-image:url('https://raw.githubusercontent.com/shucreative/ShuCREATIVE/master/banner.png');">
-            <div id="banner"></div>
+           <div id="content">
+           
+                    </div>
+          
         </div>
 
         <!-- Section 2 --------------------------------------------------->
         <div class="section" style="background-color:#f5f5f5;">
-            <div id="content">
-                <h1>The Chronicals of Yin & Yang</h1>
-                
-               <center><iframe width="560" height="315" src="https://www.youtube.com/embed/QUO8In0jGZE?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </center>
-                </p>
+            <div id="content">                               
+                <center><img src="https://raw.githubusercontent.com/shucreative/Awildshu/master/title.png" alt="A Deitys Story"><br><img src="https://raw.githubusercontent.com/shucreative/Awildshu/master/Fillertext.png" alt="You play as Yin, a young Deity in charge of managing the underworld. One day, you awake in a land unlike your own and stripped from your powers. You come to learn that Yang- your heavenbound twin has taken it upon themselves to free your souls;<br><i>You must now retrieve them to regain your power and take back your kingdom."></center>      
             </div>
         </div>
 
@@ -289,7 +336,13 @@
         
 
 
-
+        <div class="section" style="background-color:#3c3b4e;">
+            <div id="content"> 
+                <center><img src="https://raw.githubusercontent.com/shucreative/Awildshu/master/title3.png" alt="Development"><br> 
+                    <p style="color:#ededed">A 3d Platformer with 2D characters. Developed by Alexander Evans (Shu Creative) for University as a Game Aspect showcasing a specific Art Style.</p><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QUO8In0jGZE?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+            </div>
+        </div>
 
     </div>
 
